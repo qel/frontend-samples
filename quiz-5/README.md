@@ -1,4 +1,6 @@
 
+## INSTRUCTIONS
+
 The next killer app is going to be this website that checks if the sentence you enter into a box is a pangram.
 
 We had a developer who started on it, but they didn't do a very good job, and now they've left to work at Facebook. We
