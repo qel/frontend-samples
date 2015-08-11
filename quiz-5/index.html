@@ -1,31 +1,37 @@
-
-<HTML>
+<!DOCTYPE html>
+<html>
 <head>
-<title>instapangram</title>
-<script src="jquery.min.js"></script>
+	<meta charset="utf-8">
+	<title>instapangram</title>
+	<script src="jquery.min.js"></script>
+	<script src="scripts.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
 
-<link rel="stylesheet" type="text/css" href="styles.css" />
-    </head>
-    <body>
+<div id="wrapper" style="text-align: center">
 
-        <div id="wrapper" style="text-align: center">
+	<h1>instapangram</h1>
 
-            <h1>instapangram</h1>
+	<form>
+		<input type="text" name="sentence">
+		<input type="submit" value="GO">
+	</form>
 
-            <form>
-                <input type="text" name="sentence" /><input type="submit" value="GO"
-                    style="width: 50px; background: #6699FF;"  /></form>
-
-    <div id="results">
-
-       </div>
-         <script id="results-template" type="text/html">
-                <div class="result">
-                    <p class="input">[show the sentence that the user typed here]</p>
-       <p>This sentence ["is" or "is not"] a pangram!</p>
-    </div>
-</script>
-
+	<div id="results">
+	</div>
+	
+	<script id="results-template" type="text/html">
+		<div class="result">
+			<div class="input">[show the sentence that the user typed here]</div>
+			<p class="pass">This sentence <b>is</b> a pangram!</p>
+			<p class="fail">This sentence is <b>not</b> a pangram!</p>
+			<input class="dance" type="button" value="DANCE AGAIN">
+		</div>
+	</script>
+	
 </div>
-        <script src="scripts.js" />
-   </body></html>
+
+</body>
+</html>

@@ -1,41 +1,78 @@
 
-body {font-family: sans-serif}
-#wrapper {
-    width:550px;
-    margin: 0 auto
+body {
+	font-family: sans-serif;
 }
 
-h1 { color : #6699FF; margin  :50px 0;
+#wrapper {
+    margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Poiret One', sans-serif;
+	font-size: 250%;
+	color: #6699FF;
+	margin: 50px 0;
 }
 
 form {
-    margin-bottom:40px}
-
-form input[type=text] {
-    display: inline-block;
-padding:0 5px;
-height:30px;
-line-height: 30px;
-font-size : 14pt;
-width:500px;
+    margin-bottom: 40px;
 }
 
-form input[type=submit] { height: 30px;
-    display:inline-block;
+form input[type=text] {
+	display: inline-block;
+	width: 75%;
+	max-width: 500px;
+	height: 30px;
+	border: 2;
+	border-radius: 10px;
+	padding: 0 5px;
+	margin: 5px 0;
+	line-height: 30px;
+	font-size: 14pt;
+	vertical-align: bottom;
+}
 
-
-
-
-        border: none;
-    color: white;
+form input[type=submit], input[type=button] {
+	display: inline-block;
+	height: 30px;
+	border: none;
+	border-radius: 10px;
+	padding: 0 15px;
+	margin: 7px 0;
+	color: white;
+	background: #6699FF;
 }
 
 #results .result {
-background: #EEE;
-padding:10px;
-margin-bottom: 20px;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 10px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	background: #EEE;
 }
 
-#results .result p.input
-{  font-weight: bold
+#results .result div.input {
+	display: inline-block;
+	font-family: 'Poiret One', sans-serif;
+	font-size: 125%;
+}
+
+#results .result p.pass, #results .result p.fail, input.dance {
+	display: none;
+}
+
+#results .result.pass {
+	background: #DFD;
+}
+
+#results .result.fail {
+	background: #EEE;
+}
+
+#results .result.pass div.input {
+	height: 48px;
+	line-height: 48px;
 }
